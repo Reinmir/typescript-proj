@@ -33,13 +33,15 @@ import { useAppDispatch } from 'redux/hooks/hook'
     };
   return (
     <>
-      <div className='div1'>
-      <h1>REGISTER</h1>
+      <div className='box'>
+      <h2>REGISTER</h2>
       <form onSubmit={handleSubmit} className="register">
+        <div className="inputBox">
         <input name="email" value={state.email} onChange={handleOnChange} type="email" className="regName" placeholder="Enter your email" />
         <input name="password" value={state.password} onChange={handleOnChange} type="password" className="passwdReg" placeholder="Enter your password" />
-        <input name="repeatPasswd" value={state.repeatPasswd} onChange={handleOnChange} type="password" className="confirmReg" placeholder="Confirm your password" />
-        <button type="submit" className="submBttn">Submit</button>
+        <input name="repeatPasswd" value={state.repeatPasswd} onChange={handleOnChange} type="password" className="passwdReg" placeholder="Confirm your password" />
+        <button type="submit" className="submBtn">Submit</button>
+        </div>
       </form>
     </div>
     </>

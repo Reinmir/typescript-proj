@@ -42,15 +42,17 @@ const Login = () => {
   return (
     <>
       
-      <div className='div2'><h1>LOGIN</h1>
+      <div className='box'>
+      <h2>LOGIN</h2>
       <form onSubmit={handleSubmit}  className="login">
-        <input value={name}
-        onChange={(e) => handleOnChange(e,setName)} required type="email" className="loginName" placeholder="Enter your email" />
+        <div className="inputBox">
+        <input value={name} onChange={(e) => handleOnChange(e,setName)} required type="email" className="loginName" placeholder="Enter your email" /> 
         {!isNameValid && <p>Invalid email</p>}
         <input value={passwdLogin}
         onChange={(e) => handleOnChange(e,setpasswdLogin)} onBlur={() => setisPasswordValid(true)} required type="password" className="passwdLogin" placeholder="Enter your password" />
         {!isPasswordValid && <p>Invalid password</p>}
-        <button type="submit" className="submBttn">Submit</button>
+        <button type="submit" className="submBtn">Submit</button>
+        </div>
       </form>
       </div>
     </>

@@ -7,7 +7,7 @@ h1{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 30%;
+    width: 100%;
 }
 
 .loginName{
@@ -43,9 +43,57 @@ h1{
     justify-content: center;
 }
 
-.div2{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.box{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7); 
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
+
 }
+
+.box h2{
+    color: #fff;
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+}
+.box .inputBox{
+    position: relative;
+}
+.box .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+.box .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.box .submBtn{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}    
