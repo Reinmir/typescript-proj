@@ -1,0 +1,53 @@
+.nav{
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{ 
+    display: flex;
+    justify-content: space-around;
+} 
+
+.navLink{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.cartButtonWrapper{
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.shopcartbutton{
+    float: right;
+    cursor: pointer;
+    transition: color 500ms ease;
+    &:hover{
+        color: yellow;  
+    }
+    margin-top: 3px;
+}
+
+
+
+
+.roundNumber{
+    width: fit-content;
+    height: fit-content; 
+    border: 2px solid red;
+    border-radius: 50%;
+    background: mistyrose;
+    text-align: center;
+    font-size: 11px;
+    padding: 1px 2px;
+}
+
+.shopButton{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}

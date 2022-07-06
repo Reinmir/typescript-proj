@@ -1,0 +1,56 @@
+h1{
+    color: darkgray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.regName{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.passwdReg{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.confirmReg{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.submBttn{
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+.toLogin{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+.toHome{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+.toReg{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.div1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

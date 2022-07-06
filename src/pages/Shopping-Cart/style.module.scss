@@ -1,0 +1,52 @@
+.person_wrapper{
+    display:flex;
+    align-items: center;
+}
+.wrapper_cart{
+    position: relative;
+    padding: 5px;
+}
+.count{
+    color: darkblue;
+}
+.count_wrapper{
+    position: absolute;
+    bottom: 21px;
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+.remove_x{
+    position: absolute;
+    top: -50px;
+    left: 53px;
+    border:none;
+    background: none;
+}
+.imgBilly{
+    width: 100%;
+    height: 100%;
+}
+
+.imgPers{
+    width: 70px;
+    height: 70px;
+}
+
+.add{
+    border:none;
+    background: none;
+}
+
+.remove{
+    border:none;
+    background: none;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.hidden{
+    visibility: hidden;
+}
