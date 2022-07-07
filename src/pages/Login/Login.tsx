@@ -1,13 +1,18 @@
 import React, {useState} from 'react'
-import { NewApi } from 'Api/new api/new-api'
-import { Link, useNavigate } from "react-router-dom"
-import FormBuilder from '../../components/FormBuilder/FormBuilder'
 import "./style.scss"
+
+import { useNavigate } from "react-router-dom"
+
+import { NewApi } from 'Api/new api/new-api'
+
 import { useAppDispatch } from 'redux/hooks/hook'
 import { setUser } from 'redux/userReducer'
+
 import { Input } from 'components/Input/Input'
 import { Button } from 'components/Button/Button'
 import { Title } from 'components/Title/Title'
+
+import { KeyLocalStorage, PageRoutes } from 'constants/routeNames'
 
 
 
@@ -29,10 +34,10 @@ const Login = () => {
     }
     try {
       const data = await NewApi.Login(name,passwdLogin);
-      localStorage.setItem('user', data.token);
+      localStorage.setItem(KeyLocalStorage.User, data.token);
       const user = await NewApi.getUserSmb();
       dispatch(setUser(user))
-      navigate("/people-page", {replace: true}); 
+      navigate(PageRoutes.PeoplePage, {replace: true}); 
     } catch (error) {
       setisPasswordValid(false)
     }

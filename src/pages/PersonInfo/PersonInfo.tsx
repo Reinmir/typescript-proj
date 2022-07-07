@@ -1,9 +1,8 @@
 import React,{ useEffect, useState } from 'react'
-import { SwapiApi } from 'Api/swapi-api/swapi-api';
 import styles from './style.module.scss'
+
+import { SwapiApi } from 'Api/swapi-api/swapi-api';
 import { Person } from 'Api/swapi-api/models';
-
-
 
 
 function PeopleInfo(){

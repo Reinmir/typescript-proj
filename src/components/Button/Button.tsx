@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './style.module.scss'
+
 interface ButtonProps extends React.PropsWithChildren {
     className?: string
     onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined

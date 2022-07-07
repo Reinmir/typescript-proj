@@ -1,11 +1,15 @@
+import React, { useState } from 'react'
+import styles from './style.module.scss'
+
 import { Person } from 'Api/swapi-api/models'
-import { Input } from 'components/Input/Input'
+
 import { BillyImg } from 'pages/People-Page/imgLink'
-import React, { useEffect, useState } from 'react'
+
 import { addPersonToCart, removeAllFromCart, removeCurPersFromCart, removePersonFromCart } from 'redux/cartSlice'
 import { useAppDispatch, useAppSelector } from 'redux/hooks/hook'
 import { RootState } from 'redux/store'
-import styles from './style.module.scss'
+
+import { Input } from 'components/Input/Input'
 
 
 function ShoppingCart() {

@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import styles from './style.module.scss'
+
 import { Link } from 'react-router-dom'
+
 import { SwapiApi } from 'Api/swapi-api/swapi-api'
-import { BillyImg } from './imgLink'
 import { Person } from 'Api/swapi-api/models'
+
+import { BillyImg } from './imgLink'
+
 import { useAppDispatch, useAppSelector } from 'redux/hooks/hook'
 import { RootState } from 'redux/store'
 import { addPersonToCart } from 'redux/cartSlice'
+
 import { Button } from 'components/Button/Button'
+
+import { PageRoutes } from 'constants/routeNames'
 
 
 function PeoplePage() {
@@ -55,7 +62,7 @@ function PeoplePage() {
               <li className={styles.height}>Height:{item.height}</li>
               <li className={styles.mass}>Mass:{item.mass}</li>
               <li className={styles.films}>Films:{item.films}</li>
-              <Link to={'/people-page/person/'} className={styles.person}>Open more...</Link>
+              <Link to={PageRoutes.Person} className={styles.person}>Open more...</Link>
               <Button className={styles.add_cart} onClick={() => handleOnCart(item)}>Add to cart</Button>
             </div>
           </ul>
