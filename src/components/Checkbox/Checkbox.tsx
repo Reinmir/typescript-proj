@@ -1,13 +1,9 @@
-import React from 'react'
+import React from "react";
 
-interface CheckboxProps{
-    checked: boolean
+interface CheckboxProps {
+  checked: boolean;
 }
 
-
-
-export const Checkbox: React.FC<CheckboxProps> = ({checked}) => {
-  return (
-    <input type="checkbox" checked={checked} />
-  )
-}
+export const Checkbox: React.FC<CheckboxProps> = ({ checked }) => {
+  return <input type="checkbox" checked={checked} />;
+};

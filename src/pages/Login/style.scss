@@ -1,62 +1,56 @@
-
-
-.login{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+.login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-
-
-.passwdLogin{
-    margin-top: 20px;
-    border-radius: 10px;
+.passwdLogin {
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
-.submBttn{
-    margin-top: 20px;
-    border-radius: 10px;
-
+.submBttn {
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
-.toReg{
-    text-decoration: none;
-    color: black;
-    margin-top: 10px;
+.toReg {
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
 }
 
-.toHome{
-    text-decoration: none;
-    color: black;
-    margin-top: 10px;
+.toHome {
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
 }
-.toLogin{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.box{
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 400px;
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.7); 
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); 
-    border-radius: 10px; 
-
+.toLogin {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.box h2{
-    color: #fff;
-    margin: 0;
-    padding: 0 0 30px;
-    text-align: center;
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
-.box .inputBox{
-    position: relative;
+
+.box h2 {
+  color: #fff;
+  margin: 0;
+  padding: 0 0 30px;
+  text-align: center;
+}
+.box .inputBox {
+  position: relative;
 }
