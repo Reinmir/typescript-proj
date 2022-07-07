@@ -2,6 +2,8 @@ import React, {useState, useEffect} from "react";
 import {PlaceHolderApi} from '../../Api/placeHolderApi/placeHolderApi'
 import { useParams } from 'react-router-dom'
 import { ToDoValue, UserToDo } from "Api/placeHolderApi/model";
+import { Input } from "components/Input/Input";
+import { Checkbox } from "components/Checkbox/Checkbox";
 
 
 function ToDo() {
@@ -30,7 +32,7 @@ function ToDo() {
     return(
         <>
             <div>Title: {todo.title}</div>
-            <input type="checkbox" checked={todo.completed}/>
+            <Checkbox checked={todo.completed}/>
             <hr />
             <div>Name: {person.name}</div>
             <div>Username: {person.username}</div>

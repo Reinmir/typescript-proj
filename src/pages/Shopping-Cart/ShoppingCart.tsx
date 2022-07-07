@@ -1,4 +1,5 @@
 import { Person } from 'Api/swapi-api/models'
+import { Input } from 'components/Input/Input'
 import { BillyImg } from 'pages/People-Page/imgLink'
 import React, { useEffect, useState } from 'react'
 import { addPersonToCart, removeAllFromCart, removeCurPersFromCart, removePersonFromCart } from 'redux/cartSlice'
@@ -44,7 +45,7 @@ function ShoppingCart() {
   return (
     <>
     <form className={styles.search_form} action="">
-      <input placeholder='Search here...' type="text" onChange={(e) =>setValue(e.target.value)}/>
+      <Input placeholder='Search here...' type="text" onChange={(e) =>setValue(e.target.value)}/>
     </form>
     <button onClick={removeAll} className={styles.removeAll}>x</button>
     {filteredPeople.map((item) =>{

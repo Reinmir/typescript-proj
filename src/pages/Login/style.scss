@@ -1,7 +1,4 @@
-h1{
-    color: darkgray;
-    font-family: 'Times New Roman', Times, serif;
-}
+
 
 .login{
     display: flex;
@@ -10,10 +7,7 @@ h1{
     width: 100%;
 }
 
-.loginName{
-    margin-top: 20px;
-    border-radius: 10px;
-}
+
 
 .passwdLogin{
     margin-top: 20px;
@@ -66,34 +60,3 @@ h1{
 .box .inputBox{
     position: relative;
 }
-.box .inputBox input{
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-}
-.box .inputBox label{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-}
-.box .submBtn{
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #03a9f4;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}    

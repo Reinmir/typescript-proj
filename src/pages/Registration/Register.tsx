@@ -4,6 +4,9 @@ import { Link, useNavigate } from "react-router-dom"
 import "./style.scss"
 import { setUser } from 'redux/userReducer'
 import { useAppDispatch } from 'redux/hooks/hook'
+import { Input } from 'components/Input/Input'
+import { Button } from 'components/Button/Button'
+import { Title } from 'components/Title/Title'
 
   const Register = () => {
     const navigate = useNavigate();
@@ -34,13 +37,13 @@ import { useAppDispatch } from 'redux/hooks/hook'
   return (
     <>
       <div className='box'>
-      <h2>REGISTER</h2>
+      <Title>REGISTER</Title>
       <form onSubmit={handleSubmit} className="register">
         <div className="inputBox">
-        <input name="email" value={state.email} onChange={handleOnChange} type="email" className="regName" placeholder="Enter your email" />
-        <input name="password" value={state.password} onChange={handleOnChange} type="password" className="passwdReg" placeholder="Enter your password" />
-        <input name="repeatPasswd" value={state.repeatPasswd} onChange={handleOnChange} type="password" className="passwdReg" placeholder="Confirm your password" />
-        <button type="submit" className="submBtn">Submit</button>
+        <Input name="email" value={state.email} onChange={handleOnChange} type="email" mode='rounded' placeholder="Enter your email" />
+        <Input name="password" value={state.password} onChange={handleOnChange} type="password" mode='rounded' placeholder="Enter your password" />
+        <Input name="repeatPasswd" value={state.repeatPasswd} onChange={handleOnChange} type="password" mode='rounded' placeholder="Confirm your password" />
+        <Button>Submit</Button>
         </div>
       </form>
     </div>

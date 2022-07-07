@@ -1,11 +1,13 @@
 import React, {useState} from 'react'
 import { NewApi } from 'Api/new api/new-api'
 import { Link, useNavigate } from "react-router-dom"
-
 import FormBuilder from '../../components/FormBuilder/FormBuilder'
 import "./style.scss"
 import { useAppDispatch } from 'redux/hooks/hook'
 import { setUser } from 'redux/userReducer'
+import { Input } from 'components/Input/Input'
+import { Button } from 'components/Button/Button'
+import { Title } from 'components/Title/Title'
 
 
 
@@ -43,15 +45,13 @@ const Login = () => {
     <>
       
       <div className='box'>
-      <h2>LOGIN</h2>
+      <Title>LOGIN</Title>
       <form onSubmit={handleSubmit}  className="login">
         <div className="inputBox">
-        <input value={name} onChange={(e) => handleOnChange(e,setName)} required type="email" className="loginName" placeholder="Enter your email" /> 
-        {!isNameValid && <p>Invalid email</p>}
-        <input value={passwdLogin}
-        onChange={(e) => handleOnChange(e,setpasswdLogin)} onBlur={() => setisPasswordValid(true)} required type="password" className="passwdLogin" placeholder="Enter your password" />
-        {!isPasswordValid && <p>Invalid password</p>}
-        <button type="submit" className="submBtn">Submit</button>
+          <Input isValid={isNameValid} errorMsg='Incorrect email' value={name} onChange={(e) => handleOnChange(e,setName)} required type="email" placeholder="Enter your email" mode='rounded'/>
+          <Input isValid={isPasswordValid} errorMsg='Incorrect password' value={passwdLogin}
+          onChange={(e) => handleOnChange(e,setpasswdLogin)} onBlur={() => setisPasswordValid(true)} required type="password" mode='rounded' placeholder="Enter your password" />
+          <Button>Submit</Button>
         </div>
       </form>
       </div>

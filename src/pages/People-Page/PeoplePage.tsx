@@ -7,6 +7,7 @@ import { Person } from 'Api/swapi-api/models'
 import { useAppDispatch, useAppSelector } from 'redux/hooks/hook'
 import { RootState } from 'redux/store'
 import { addPersonToCart } from 'redux/cartSlice'
+import { Button } from 'components/Button/Button'
 
 
 function PeoplePage() {
@@ -55,7 +56,7 @@ function PeoplePage() {
               <li className={styles.mass}>Mass:{item.mass}</li>
               <li className={styles.films}>Films:{item.films}</li>
               <Link to={'/people-page/person/'} className={styles.person}>Open more...</Link>
-              <button className={styles.add_cart} onClick={() => handleOnCart(item)}>Add to cart</button>
+              <Button className={styles.add_cart} onClick={() => handleOnCart(item)}>Add to cart</Button>
             </div>
           </ul>
         )
