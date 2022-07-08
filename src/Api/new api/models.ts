@@ -1,6 +1,7 @@
 export interface User {
   email: string;
   id: number;
+  photo?: string;
 }
 
 export interface RegResp {

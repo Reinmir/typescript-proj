@@ -26,7 +26,6 @@ const Login = () => {
 
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
-    //validation
     if (name.length > 22 || name.length < 3) {
       setIsNameValid(false);
     }

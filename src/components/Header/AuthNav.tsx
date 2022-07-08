@@ -37,20 +37,42 @@ export const AuthNav = () => {
     }
   
     return (
-    <>
-    <nav>
-        <NavLink className={styles.navLink} to={PageRoutes.Home}>Home</NavLink>
-        <NavLink className={styles.navLink} to={PageRoutes.PeoplePage}>People Page</NavLink>
-        <NavLink className={styles.navLink} to={PageRoutes.ToDos}>To Do List</NavLink>
-        <NavLink className={styles.navLink} to={`${PageRoutes.PersonalCabinet}/${user?.id}`}>Personal Cabinet</NavLink>
-    </nav>
-    <div className={styles.cartButtonWrapper}>
-        <Link to={PageRoutes.ShoppingCart} className={styles.shopButton}><FaShoppingCart size={30} onClick={() =>{ setCartOpen(cartOpen = !cartOpen)}} className={[styles.shopcartbutton, cartOpen && styles.shopcartbuttonActive].join(' ')}/></Link> 
-        <div className={styles.roundNumber}>{getCount()}</div>
-    </div>
-    <div className={styles.logoutbtn}>
-        <button onClick={handleLogOut}>Log Out</button>
-    </div>
+      <>
+        <nav>
+          <NavLink className={styles.navLink} to={PageRoutes.Home}>
+            Home
+          </NavLink>
+          <NavLink className={styles.navLink} to={PageRoutes.PeoplePage}>
+            People Page
+          </NavLink>
+          <NavLink className={styles.navLink} to={PageRoutes.ToDos}>
+            To Do List
+          </NavLink>
+          <NavLink
+            className={styles.navLink}
+            to={`${PageRoutes.PersonalCabinet}/${user?.id}`}
+          >
+            Personal Cabinet
+          </NavLink>
+        </nav>
+        <div className={styles.cartButtonWrapper}>
+          <Link to={PageRoutes.ShoppingCart} className={styles.shopButton}>
+            <FaShoppingCart
+              size={30}
+              onClick={() => {
+                setCartOpen((cartOpen = !cartOpen));
+              }}
+              className={[
+                styles.shopcartbutton,
+                cartOpen && styles.shopcartbuttonActive,
+              ].join(" ")}
+            />
+          </Link>
+          <div className={styles.roundNumber}>{getCount()}</div>
+        </div>
+        <div className={styles.logoutbtn}>
+          <button onClick={handleLogOut}>Log Out</button>
+        </div>
       </>
-  )
+    );
 }
