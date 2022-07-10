@@ -6,7 +6,7 @@ export enum PageRoutes {
   Register = "/register",
   ToDos = "/todos",
   ToDo = "/todos/:todoId",
-  Person = "people-page/person",
+  Person = "/person",
   ShoppingCart = "/shopping-cart",
   PersonalCabinet = "/personal-cabinet",
   Home = "/",

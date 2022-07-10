@@ -1,7 +1,7 @@
 export interface User {
   email: string;
   id: number;
-  photo?: string;
+  photoUrl?: string;
 }
 
 export interface RegResp {
@@ -10,4 +10,16 @@ export interface RegResp {
 
 export interface LogResp {
   token: string;
+}
+
+export interface UpdateAvatarResponse{
+  url: string
+}
+
+export interface UpdateEmailResponse{
+  message: string
+}
+
+export interface UpdatePasswordResponse{
+  message: string
 }

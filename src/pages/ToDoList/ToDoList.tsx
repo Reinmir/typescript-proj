@@ -37,7 +37,7 @@ function ToDoList() {
                 <div>Title: {item.title}</div>
                 <input type="checkbox" checked={item.completed} />
                 <Link
-                  to={`${PageRoutes.ToDo}/${item.id}`}
+                  to={`${PageRoutes.ToDos}/${item.id}`}
                   className={styles.person}
                 >
                   Open more...

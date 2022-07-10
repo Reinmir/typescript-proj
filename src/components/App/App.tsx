@@ -19,7 +19,7 @@ import { setUser } from "redux/userReducer";
 
 import { NewApi } from "Api/new api/new-api";
 
-import { PageRoutes } from "constants/routeNames";
+import { KeyLocalStorage, PageRoutes } from "constants/routeNames";
 
 import Header from "components/Header/Header";
 
@@ -32,7 +32,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (localStorage.getItem("user")) {
+    if (localStorage.getItem(KeyLocalStorage.User)) {
       getUser();
     }
   }, []);

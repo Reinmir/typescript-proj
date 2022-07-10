@@ -1,5 +1,28 @@
-.changeBox{
-    width: 350px;
-    border: 5px solid;
-    padding: 25px;
+.changeBox {
+  width: 350px;
+  border: 5px solid;
+  padding: 25px;
+}
+
+.userPhotoWrapper {
+  width: 100px;
+  height: 100px;
+}
+
+.userPhotoImg {
+  width: 100%;
+  height: 100%;
+}
+
+.userPhoto {
+  width: 100px;
+  height: 100px;
+}
+
+.uploadBtn {
+  cursor: pointer;
+}
+
+.divError{
+    color: red
 }
