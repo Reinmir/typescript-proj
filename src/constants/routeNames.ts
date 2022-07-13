@@ -14,3 +14,4 @@ export enum PageRoutes {
 export enum KeyLocalStorage {
   User = "user",
 }
+

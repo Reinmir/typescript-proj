@@ -2,10 +2,12 @@ import React, { useState } from "react";
 
 import { Title } from "components/Title/Title";
 import { Button } from "components/Button/Button";
+
 const catImg =
   "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1200px-Cat_November_2010-1a.jpg";
 const dogImg =
   "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg";
+
 
 function Home() {
   const [changeImg, setChangeImg] = useState(true);

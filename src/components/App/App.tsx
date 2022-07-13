@@ -38,20 +38,45 @@ function App() {
   }, []);
 
   const authRoutes = [
-    <Route path={PageRoutes.PeoplePage} element={<PeoplePage />} />,
-    <Route path={PageRoutes.ShoppingCart} element={<ShoppingCart />} />,
-    <Route path={PageRoutes.Person} element={<PersonInfo />} />,
-    <Route path={PageRoutes.ToDo} element={<ToDo />} />,
-    <Route path={PageRoutes.ToDos} element={<ToDoList />} />,
     <Route
+      key={PageRoutes.PeoplePage}
+      path={PageRoutes.PeoplePage}
+      element={<PeoplePage />}
+    />,
+    <Route
+      key={PageRoutes.ShoppingCart}
+      path={PageRoutes.ShoppingCart}
+      element={<ShoppingCart />}
+    />,
+    <Route
+      key={PageRoutes.Person}
+      path={PageRoutes.Person}
+      element={<PersonInfo />}
+    />,
+    <Route key={PageRoutes.ToDo} path={PageRoutes.ToDo} element={<ToDo />} />,
+    <Route
+      key={PageRoutes.ToDos}
+      path={PageRoutes.ToDos}
+      element={<ToDoList />}
+    />,
+    <Route
+      key={PageRoutes.PersonalCabinet}
       path={`${PageRoutes.PersonalCabinet}/:userId`}
       element={<PersonalCabinet />}
     />,
   ];
 
   const anonRoutes = [
-    <Route path={PageRoutes.Register} element={<Register />} />,
-    <Route path={PageRoutes.Login} element={<Login />} />,
+    <Route
+      key={PageRoutes.Register}
+      path={PageRoutes.Register}
+      element={<Register />}
+    />,
+    <Route
+      key={PageRoutes.Login}
+      path={PageRoutes.Login}
+      element={<Login />}
+    />,
   ];
 
   return (
